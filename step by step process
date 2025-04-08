@@ -1,0 +1,16 @@
+1) force your pc to use your dns server by changing the adapter settingd
+
+2)clear the cache of your browser
+
+net stop dnscache
+
+
+3)Running the DNS gateway
+python dns_gateway.py
+
+If everything is configured correctly, you’ll see:
+
+[+] Zero Trust DNS Gateway running on 0.0.0.0:53
+
+4)Launch the Dashboard
+streamlit run dashboard.py
