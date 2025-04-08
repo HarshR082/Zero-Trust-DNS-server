@@ -1,0 +1,5 @@
+with open("dns_logs.txt") as f:
+    logs = f.readlines()
+
+for line in reversed(logs[-30:]):
+    st.text(line.strip())
